@@ -25,12 +25,12 @@ const Navbar = () => {
     <div className="font-hero sticky top-0 z-50 bg-[#b08564d5] text-[#543310]">
       <div className="flex items-center justify-between px-3">
         <div className="logo_container text-3xl font-semibold">
-          <Link to={"/home"} className="flex flex-col items-center">
+          <a href={"/"} className="flex flex-col items-center">
             <img className="max-w-[5rem]" src={logo} alt="" />
             <span className=" relative bottom-2 text-2xl  text-[#543310] font-semibold ">
               Café De Alfredo
             </span>
-          </Link>
+          </a>
         </div>
         <div className="block font-extrabold md:hidden text-4xl cursor-pointer">
           <button onClick={() => setOpen((prev) => !prev)}>
@@ -38,12 +38,12 @@ const Navbar = () => {
           </button>
         </div>
         <div className="md:text-2xl xl:gap-3 xl:px-3  xl:text-3xl md:font-extrabold hidden md:flex md:items-center space-x-6 text-2xl">
-          <Link
+          <a
             className="active:scale-[.8] transition-all ease-in-out hover:scale-[1.2]"
-            to="/home"
+            href="/"
           >
             Home
-          </Link>
+          </a>
           <a
             className="active:scale-[.8] transition-all ease-in-out hover:scale-[1.2]"
             href="#about"
