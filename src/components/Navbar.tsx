@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="font-hero sticky top-0 z-50 bg-[#b08564d5] text-[#543310]">
       <div className="flex items-center justify-between px-3">
         <div className="logo_container text-3xl font-semibold">
-          <Link to={"/"} className="flex flex-col items-center">
+          <Link to={"/home"} className="flex flex-col items-center">
             <img className="max-w-[5rem]" src={logo} alt="" />
             <span className=" relative bottom-2 text-2xl  text-[#543310] font-semibold ">
               Café De Alfredo
