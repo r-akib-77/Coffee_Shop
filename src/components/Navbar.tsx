@@ -82,7 +82,7 @@ const Navbar = () => {
           animate={open ? "visible" : "hidden"}
           className="flex flex-col gap-4 items-center capitalize tracking-wide"
         >
-          {["/", "about", "menu", "contact"].map((item, i) => (
+          {["home", "about", "menu", "contact"].map((item, i) => (
             <motion.li
               whileTap={{
                 scale: 0.8,
@@ -91,7 +91,7 @@ const Navbar = () => {
               custom={i}
               variants={listVariants}
             >
-              <Link to={`/${item}`}>{item}</Link>
+              <Link to={`/${item === "home" ? "" : item}`}>{item}</Link>
             </motion.li>
           ))}
           <NavLink
