@@ -82,7 +82,7 @@ const Navbar = () => {
           animate={open ? "visible" : "hidden"}
           className="flex flex-col gap-4 items-center capitalize tracking-wide"
         >
-          {["home", "about", "menu", "contact"].map((item, i) => (
+          {["/", "about", "menu", "contact"].map((item, i) => (
             <motion.li
               whileTap={{
                 scale: 0.8,
